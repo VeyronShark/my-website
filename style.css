@@ -16,3 +16,18 @@
 body {
   font-family: RedHatMono, monospace;
 }
+header.open, header.open + #nav-open-close {
+  transform: translateX(0);
+}
+.nav-button {
+  color: white;
+  border-radius: 5px;
+  padding: 4px 12px;
+  transition: all 150ms linear;
+}
+.nav-button:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 8px white;
+  font-weight: 600;
+}

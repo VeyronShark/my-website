@@ -6,19 +6,59 @@
   <meta name="description" content="Varun Satapathy's personal portfolio website">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Varun Satapathy</title>
 </head>
-<body class="bg-gray-800">
-  <header class="w-full bg-gray-900 flex">
-    <img src="assets/images/chevron_left.svg" class="border-r-[1px] md:hidden" alt="">
-    <nav class="overflow-x-auto flex justify-between py-4 text-lg whitespace-nowrap max-w-2xl mx-auto gap-2">
-      <a href="" class="text-white px-4 py-1 rounded-md hover:bg-white hover:text-black hover:font-semibold hover:shadow-[0_0_8px_white] transition-all duration-150 ">Home</a>
-      <a href="" class="text-white px-4 py-1 rounded-md hover:bg-white hover:text-black hover:font-semibold hover:shadow-[0_0_8px_white] transition-all duration-150 ">About me</a>
-      <a href="" class="text-white px-4 py-1 rounded-md hover:bg-white hover:text-black hover:font-semibold hover:shadow-[0_0_8px_white] transition-all duration-150 ">My Skills</a>
-      <a href="" class="text-white px-4 py-1 rounded-md hover:bg-white hover:text-black hover:font-semibold hover:shadow-[0_0_8px_white] transition-all duration-150 ">Portfolio</a>
-      <a href="" class="text-white px-4 py-1 rounded-md hover:bg-white hover:text-black hover:font-semibold hover:shadow-[0_0_8px_white] transition-all duration-150 ">Get in touch</a>
+<body class="bg-gray-800 relative">
+  <!-- Mobile header -->
+  <header class="mobile fixed bg-gray-900 flex justify-start w-[245px] px-4 h-screen -translate-x-[100%] duration-300 sm:hidden">
+    <nav class="flex flex-col justify-start py-4 text-xl gap-4">
+      <a href="" class="nav-button">Home</a>
+      <a href="" class="nav-button">About me</a>
+      <a href="" class="nav-button">My Skills</a>
+      <a href="" class="nav-button">Portfolio</a>
+      <a href="" class="nav-button">Get in touch</a>
     </nav>
-    <img src="assets/images/chevron_right.svg" class="border-l-[1px] md:hidden" alt="">
   </header>
+
+  <button class="bg-gray-900 absolute top-0 left-[242px] -translate-x-[242px] w-[68px] h-[68px] duration-300 sm:hidden rounded-r-lg" id="nav-open-close">
+    <i class="fa-solid fa-bars text-white text-3xl" id="nav-icon"></i>
+  </button>
+
+  <!-- Desktop header -->
+  <header class="hidden sm:flex w-full bg-gray-900">
+    <nav class="flex justify-between py-4 text-lg max-w-2xl mx-auto gap-4">
+      <a href="" class="nav-button">Home</a>
+      <a href="" class="nav-button">About me</a>
+      <a href="" class="nav-button">My Skills</a>
+      <a href="" class="nav-button">Portfolio</a>
+      <a href="" class="nav-button">Get in touch</a>
+    </nav>
+  </header>
+
+  <main>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloribus possimus aspernatur cupiditate nihil ipsum sequi dolorem exercitationem, sapiente quidem, dolores tenetur quaerat earum! Quis ratione sunt qui fugit aspernatur.
+    Magnam debitis architecto beatae sint et ut odit ipsam rem ab obcaecati, repudiandae cupiditate doloremque placeat fuga provident deleniti quas unde eos nihil! Dicta dolor obcaecati beatae voluptatum? Debitis, impedit?
+    Non, exercitationem minima ducimus aspernatur saepe voluptatem dolorum quasi dolor placeat, atque fugiat asperiores quia accusamus temporibus magnam, ratione nam iste. Ratione asperiores officia animi praesentium harum accusamus assumenda dignissimos!
+    In hic, placeat adipisci beatae quasi cupiditate et ad explicabo quisquam maiores eligendi, obcaecati sapiente, harum aliquam delectus. Repellendus, mollitia eaque praesentium corporis minus cumque atque rem doloremque culpa? Fuga?
+    Assumenda voluptas accusantium fuga cum unde. Sequi reiciendis, ipsum porro aut dolore incidunt temporibus blanditiis. Dicta atque placeat nisi, deleniti culpa pariatur eligendi architecto porro ducimus officiis fugit sit fuga?
+    Perferendis ab quia quisquam doloremque accusantium earum sed nostrum eum. Dolorum unde facilis sint ipsum praesentium reiciendis doloribus nobis ea, perferendis perspiciatis cum dolorem facere at accusantium possimus tenetur nostrum.
+    Temporibus non quibusdam nostrum eos, nam aut sit tempore quae dolorem tenetur, nemo sint magni maiores minus atque hic provident! Aperiam quo dolorum quia provident, libero vel culpa ad sequi?
+    Molestias, excepturi minima? Asperiores illum molestiae eveniet pariatur eaque explicabo nemo vitae culpa exercitationem debitis necessitatibus aperiam reiciendis, hic atque? Iste expedita totam consequuntur non blanditiis. Magnam saepe quaerat consequatur?
+    Voluptas aliquam sequi, perferendis eligendi maiores saepe provident quis dolorum qui, cum atque voluptatem! Reiciendis ducimus molestias velit ullam, non, nobis delectus facere ipsam molestiae minus obcaecati itaque fugit quasi.
+    Alias, dolore maxime. Maiores rerum repellendus qui alias exercitationem ratione perferendis eveniet possimus sit voluptas dolorem expedita ipsum esse vel amet laudantium commodi, sed atque soluta? Culpa, corporis. Laudantium, facilis.
+    Quos voluptatum sint alias laboriosam commodi voluptatem repellat. Neque eius iusto obcaecati minima fugit illum? Officiis amet reprehenderit explicabo ullam facere omnis hic! Deserunt unde quo soluta distinctio quibusdam? Cum?
+    Ab dolores, ratione nobis est debitis, odio inventore fugiat illum quo repellendus sit cumque. Iusto, nulla vero nemo magnam itaque, quia sint reprehenderit dicta iste quam maiores ad dolores consectetur?
+    Architecto, tempora dicta unde quae dignissimos iure nostrum ullam illum voluptate quas consequuntur dolores facilis nam in! Voluptatem laboriosam ad laborum atque! Maiores in rem laboriosam non optio possimus impedit?
+    Neque eos quibusdam velit praesentium natus autem, ipsam vel, rem quia iure perferendis. Quod tenetur similique omnis ex magni, architecto harum aperiam eligendi. Hic voluptates harum, debitis numquam et similique.
+    Reiciendis quibusdam sapiente reprehenderit sit? Debitis accusamus adipisci similique necessitatibus minus, obcaecati unde beatae itaque, laudantium autem qui omnis! Quaerat magnam vitae laborum a, nisi velit delectus! Dolore, praesentium quo!
+    Earum repudiandae saepe placeat consequatur, alias eum nemo. Dignissimos in quo expedita pariatur sapiente natus ipsum iste neque at vitae cumque amet, obcaecati excepturi! Esse dicta sapiente incidunt necessitatibus corporis!
+    Nihil molestiae minima quae voluptatem, ut nulla similique delectus exercitationem rem vero odio nisi earum soluta cum, aliquid labore officiis porro fuga alias doloribus fugiat, commodi eius hic eos. Nihil.
+    Est blanditiis autem, eveniet velit itaque accusamus alias laboriosam ullam commodi voluptates nemo aliquam molestiae doloremque et consequuntur nihil labore nam ab consectetur iste, reprehenderit maiores eligendi. Exercitationem, nemo dolorem!
+    Inventore deleniti laboriosam, laudantium consectetur fugiat illum numquam impedit perspiciatis modi. Sed tempora deserunt inventore laboriosam, tenetur, nobis natus adipisci ab voluptas mollitia aperiam nam repudiandae, incidunt sunt! Magni, totam.
+    Cupiditate quam libero aut excepturi impedit tempora, aperiam placeat, itaque repellat commodi ipsam explicabo quidem quis rem perspiciatis? Nihil provident error natus sunt distinctio, id at amet quaerat corporis est?
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
