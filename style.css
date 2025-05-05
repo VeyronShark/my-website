@@ -16,8 +16,14 @@
 body {
   font-family: RedHatMono, monospace;
 }
-header.open, header.open + #nav-open-close {
+header.mobile:focus{
+  border: 2px solid white;
+}
+header.mobile.open, header.mobile.open + #nav-open-close {
   transform: translateX(0);
+}
+header.mobile.open + #nav-open-close {
+  width: 60px;
 }
 .nav-button {
   color: white;
@@ -30,4 +36,16 @@ header.open, header.open + #nav-open-close {
   background-color: white;
   box-shadow: 0 0 8px white;
   font-weight: 600;
+}
+
+.content-section {
+  height: 100vh;
+  padding: clamp(80px, 10vw, 100px) clamp(40px, 6vw, 80px);
+}
+.content-section h1 {
+  font-size: clamp(3.5rem, 7vw ,4.5rem);
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
 }

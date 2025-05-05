@@ -2,15 +2,14 @@ const navButton = document.getElementById("nav-open-close");
 const navButtonIcon = document.getElementById("nav-icon");
 const header = document.querySelector('header.mobile');
 
+function toggleNav() {
+  header.classList.toggle('open');
+  navButtonIcon.classList.toggle('fa-bars');
+  navButtonIcon.classList.toggle('fa-xmark');
+}
 navButton.addEventListener('click', () => {
-  if (header.classList.contains('open')){
-    header.classList.remove('open');
-    navButtonIcon.classList.remove('fa-xmark');
-    navButtonIcon.classList.add('fa-bars');
-  }
-  else {
-    header.classList.add('open');
-    navButtonIcon.classList.remove('fa-bars');
-    navButtonIcon.classList.add('fa-xmark');
-  }
+  toggleNav();
+})
+navButton.addEventListener('blur', () => {
+  toggleNav();
 })
