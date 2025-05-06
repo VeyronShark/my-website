@@ -13,6 +13,25 @@
   font-display: swap;
 }
 
+:root {
+  --border-radius: 10px;
+  --hover-color-1: #00b5ff;
+}
+
+/* utilities */
+.hover-1{
+  transition: all 0.2s ease;
+  border-radius: var(--border-radius);
+}
+.hover-1:hover{
+  /* color: var(--hover-color-1);
+  font-weight: 600; */
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 8px white;
+}
+/* end of utilities */
+
 body {
   font-family: RedHatMono, monospace;
 }
@@ -23,7 +42,7 @@ header.mobile.open, header.mobile.open + #nav-open-close {
   transform: translateX(0);
 }
 header.mobile.open + #nav-open-close {
-  width: 60px;
+  width: 50px;
 }
 .nav-button {
   color: white;
@@ -46,6 +65,56 @@ header.mobile.open + #nav-open-close {
   font-size: clamp(3rem, 7vw ,4.5rem);
   color: white;
   font-weight: 300;
-  letter-spacing: 0.1rem;
+  /* letter-spacing: 0.1rem; */
   line-height: 4rem;
 }
+.content-section:nth-child(2n) h1 {
+  text-align: right;
+}
+
+
+/* Home section */
+.home-container > div{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.img-container {
+  background-image: url('https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/399000/500/399556.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.details {
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  padding: 1rem 0;
+}
+.details p, .details div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.details:hover{
+  transform: scale(1.05);
+}
+@media(min-width: 768px) {
+  .home-container > div{
+    width: clamp(300px, 40vw, 500px);
+    height: 90%;
+  }
+  .img-container {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+  }
+  .details {
+    text-align: left;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: var(--border-radius);
+    padding: 2rem;
+  }
+}
+/* end of Home section */ 
