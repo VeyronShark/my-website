@@ -1,90 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Varun Satapathy's personal portfolio website">
-  <link rel="stylesheet" href="./output.css">
-  <link rel="stylesheet" href="./style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
   <title>Varun Satapathy</title>
 </head>
-<body class="bg-gray-800 relative">
-  <!-- Mobile header -->
-  <header tabindex="0" class="mobile fixed bg-gray-900 flex justify-start w-[245px] px-4 h-screen sm:hidden z-40">
-    <nav class="flex flex-col justify-start py-4 text-xl gap-4">
-      <a href="#home" class="nav-button">Home</a>
-      <a href="#about-me" class="nav-button">About me</a>
-      <a href="#my-skills" class="nav-button">My Skills</a>
-      <a href="#portfolio" class="nav-button">Portfolio</a>
-      <a href="#get-in-touch" class="nav-button">Get in touch</a>
-    </nav>
-  </header>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Varun Satapathy</div>
 
-  <button class="bg-gray-900 fixed top-0 left-[195px] w-[68px] h-[68px] duration-300 sm:hidden rounded-r-lg z-50" id="nav-open-close">
-    <i class="fa-solid fa-bars text-white text-3xl" id="nav-icon"></i>
-  </button>
-
-  <!-- Desktop header -->
-  <header class="hidden fixed sm:flex w-full bg-gray-900 z-40">
-    <nav class="flex justify-between py-4 text-lg max-w-2xl mx-auto gap-4">
-      <a href="#home" class="nav-button">Home</a>
-      <a href="#about-me" class="nav-button">About me</a>
-      <a href="#my-skills" class="nav-button">My Skills</a>
-      <a href="#portfolio" class="nav-button">Portfolio</a>
-      <a href="#get-in-touch" class="nav-button">Get in touch</a>
+      <div class="nav-elements">
+        <a href="" class="nav-element">Home</a>
+        <a href="" class="nav-element">About</a>
+        <a href="" class="nav-element">Portfolio</a>
+        <a href="" class="nav-element">Get in Touch</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section class="content-section" id="home">
-      <h1>Home</h1>
-
-      <div class="home-container flex flex-col md:flex-row relative top-8 h-[90%] justify-center items-center">
-        <div class="img-container"></div>
-
-        <div class="details md:p-8 bg-gray-900 md:text-lg">
-          <p class="text-sm/6 md:text-lg/10 hover-1">Hi, I am</p>
-          <div class="name-container text-2xl md:text-4xl my-4 md:my-6 hover-1 py-1">Varun Satapathy,</div>
-          <p class="text-sm/6 md:text-lg/10 hover-1">and welcome to my website. This place is my personal museum. Feel free to explore all there is to know about me, and if you want to get in touch, check out the bottom of the page.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="about-me">
-      <h1>About Me</h1>
-
-      <div class="about-me-container flex flex-col md:flex-row relative top-8 border border-white h-[90%]">
-
-      </div>
-    </section>
-
-    <section class="content-section" id="my-skills">
-      <h1>My Skills</h1>
-
-      <div class="my-skills-container flex flex-col md:flex-row relative top-8 border border-white h-[90%]">
-
-      </div>
-    </section>
-
-    <section class="content-section" id="portfolio">
-      <h1>Portfolio</h1>
-
-      <div class="portfolio-container flex flex-col md:flex-row relative top-8 border border-white h-[90%]">
-
-      </div>
-    </section>
-
-    <section class="content-section" id="get-in-touch">
-      <h1>Get in Touch</h1>
-
-      <div class="get-in-touch-container flex flex-col md:flex-row relative top-8 border border-white h-[90%]">
-
-      </div>
+    <section id="home">
+      <div class="welcome-text" id="text-1">Welcome</div>
+      <div class="welcome-text" id="text-2">to</div>
+      <div class="welcome-text" id="text-3">My Website</div>
     </section>
   </main>
 
+  <footer>
+    <h2>Get in touch</h2>
+
+    <div class="links-container">
+      <a href="" class="footer-link"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="" class="footer-link"><i class="fa-brands fa-google"></i> Email</a>
+      <a href="" class="footer-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
